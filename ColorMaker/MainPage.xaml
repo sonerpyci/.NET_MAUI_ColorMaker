@@ -15,7 +15,19 @@
 
 
     <Grid x:Name="Container" BackgroundColor="Black">
-        
+        <Frame Margin="10,0,10,0" VerticalOptions="Center">
+            <VerticalStackLayout Spacing="15" VerticalOptions="Center">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Large"    
+                    HorizontalTextAlignment="Center"
+                    Text="Color Maker"
+                />
+                
+                
+            </VerticalStackLayout>
+            
+        </Frame>
     </Grid>
     
 </ContentPage>
