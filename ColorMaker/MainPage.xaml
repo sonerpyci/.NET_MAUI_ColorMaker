@@ -24,30 +24,36 @@
                 <Slider x:Name="SliderRed"
                         ThumbColor="{StaticResource Primary}"
                         MaximumTrackColor="{StaticResource Tertiary}"
-                        MinimumTrackColor="{StaticResource Secondary}" />
+                        MinimumTrackColor="{StaticResource Secondary}" 
+                        ValueChanged="Slider_ValueChanged"/>
                 
                 <Label Text="Green Value : "/>
                 <Slider x:Name="SliderGreen"
                         ThumbColor="{StaticResource Primary}"
                         MaximumTrackColor="{StaticResource Tertiary}"
-                        MinimumTrackColor="{StaticResource Secondary}" />
+                        MinimumTrackColor="{StaticResource Secondary}"
+                        ValueChanged="Slider_ValueChanged"/>
 
                 <Label Text="Blue Value : "/>
                 <Slider x:Name="SliderBlue"
                         ThumbColor="{StaticResource Primary}"
                         MaximumTrackColor="{StaticResource Tertiary}"
-                        MinimumTrackColor="{StaticResource Secondary}" />
+                        MinimumTrackColor="{StaticResource Secondary}"
+                        ValueChanged="Slider_ValueChanged"/>
+                
                 <Frame CornerRadius="25" HorizontalOptions="Center">
                     <HorizontalStackLayout>
                         <Label x:Name="LabelHex"
                                HorizontalTextAlignment="End"
                                Text="HEX Value : #000000"
                                VerticalOptions="Center" />
-                        <ImageButton Margin="10,0,0,0"
+                        <ImageButton x:Name="BtnCopy"
+                                     Margin="10,0,0,0"
                                      HeightRequest="25"
                                      Source="copy.svg"
                                      VerticalOptions="Center"
-                                     WidthRequest="25" />
+                                     WidthRequest="25"
+                                     Clicked="BtnCopy_Clicked"/>
                     </HorizontalStackLayout>
                 </Frame>
                 <Button x:Name="BtnGenerate"
