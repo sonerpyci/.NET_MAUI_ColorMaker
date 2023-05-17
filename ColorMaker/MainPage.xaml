@@ -59,7 +59,8 @@
                 <Button x:Name="BtnGenerate"
                         BackgroundColor="{StaticResource Primary}"
                         Text="Generate Random Color"
-                        TextColor="AntiqueWhite"/>
+                        TextColor="AntiqueWhite"
+                        Clicked="BtnGenerate_Clicked"/>
             </VerticalStackLayout>
             
         </Frame>

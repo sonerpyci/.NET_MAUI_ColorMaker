@@ -31,5 +31,23 @@ public partial class MainPage : ContentPage
     {
         Clipboard.Default.SetTextAsync(LabelHex.BackgroundColor.ToHex());
     }
+    
+    private void BtnGenerate_Clicked(object sender, EventArgs e)
+    {
+        var rand = new Random();
+
+        var red = rand.NextDouble();
+        SliderRed.Value = red;
+
+        var green = rand.NextDouble();
+        SliderGreen.Value = green;
+
+        var blue = rand.NextDouble();
+        SliderBlue.Value = blue;
+
+        var color = Color.FromRgb(red, green, blue);
+
+        SetColor(color);
+    }
 }
 
